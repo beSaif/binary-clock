@@ -5,8 +5,8 @@ import printKthBit from "../utils/getKthBit";
 const Bits = ({ type, value }) => {
   return (
     <div>
-      <div className="py-2">
-        {type}: {value}
+      <div className="flex py-2 font-light text-base">
+        {type}: <div className="font-bold pl-1"> {value}</div>
       </div>
       <ul className="flex">
         {Array.from({ length: 10 }).map((_, index) => (
