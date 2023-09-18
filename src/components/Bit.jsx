@@ -11,7 +11,7 @@ const Bit = ({ isOn }) => {
       sm:w-9
       sm:h-9
       rounded 
-      border-green-600 
+      border-green-600/50
       border-2 
       flex 
       items-center 
@@ -20,7 +20,7 @@ const Bit = ({ isOn }) => {
       
       transition`,
         isOn
-          ? "bg-green-600 shadow-[0px_0px_5px_0.5px_#38a169] border-none"
+          ? "bg-green-600 shadow-[0px_0px_8px_1px_#38a169] border-none"
           : "bg-transparent"
       )}
     ></div>
