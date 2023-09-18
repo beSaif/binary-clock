@@ -11,6 +11,7 @@ const App = () => {
         flex-col
         items-center
         justify-between
+        pb-12
     "
     >
       <Header />
