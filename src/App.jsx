@@ -6,6 +6,7 @@ const App = () => {
     <div
       className="  
         h-screen
+        
         flex
         flex-col
         items-center

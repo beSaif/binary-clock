@@ -5,8 +5,11 @@ const Bit = ({ isOn }) => {
   return (
     <div
       className={twMerge(
-        `w-9 
-      h-9 
+        `
+      w-6 
+      h-6 
+      sm:w-9
+      sm:h-9
       rounded 
       border-green-600 
       border-2 
