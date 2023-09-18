@@ -13,8 +13,6 @@ const Time = () => {
     };
   }, []);
 
-  console.log(time);
-
   return (
     <div
       className="  
