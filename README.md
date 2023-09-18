@@ -4,7 +4,7 @@ A binary clock built with React + Vite.
 
 # Demo
 
-[https://binary-clock-react.vercel.app/](https://binary-clock-react.vercel.app/)
+<a href="https://binary-clock-react.vercel.app/" target="_blank">binary-clock-react.vercel.app</a>
 
 ## Preview
 
