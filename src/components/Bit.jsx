@@ -20,7 +20,7 @@ const Bit = ({ isOn }) => {
       
       transition`,
         isOn
-          ? "bg-green-600 shadow-[0px_0px_8px_1px_#38a169] border-none"
+          ? "bg-green-500 shadow-[0px_0px_8px_1px_#38a169] border-none"
           : "bg-transparent"
       )}
     ></div>
