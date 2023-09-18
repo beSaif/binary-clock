@@ -16,8 +16,12 @@ const Bit = ({ isOn }) => {
       flex 
       items-center 
       justify-center 
+      
+      
       transition`,
-        isOn ? "bg-green-600" : "bg-transparent"
+        isOn
+          ? "bg-green-600 shadow-[0px_0px_5px_0.5px_#38a169] border-none"
+          : "bg-transparent"
       )}
     ></div>
   );
