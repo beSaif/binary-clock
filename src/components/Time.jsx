@@ -13,6 +13,11 @@ const Time = () => {
     };
   }, []);
 
+  const hour = new Date(time).getHours();
+  const minute = new Date(time).getMinutes();
+  const second = new Date(time).getSeconds();
+  const millisecond = new Date(time).getMilliseconds();
+
   return (
     <div
       className="  
@@ -23,17 +28,21 @@ const Time = () => {
         justify-center
     "
     >
-      <Bits
-        type={"Hour"}
-        value={
-          new Date(time).getHours() > 12
-            ? new Date(time).getHours() - 12
-            : new Date(time).getHours()
-        }
-      />
-      <Bits type={"Minute"} value={new Date(time).getMinutes()} />
-      <Bits type={"Second"} value={new Date(time).getSeconds()} />
-      <Bits type={"Millisecond"} value={new Date(time).getMilliseconds()} />
+      <div className="mb-5 drop-shadow-md">
+        <h2 className="text-4xl font-bold text-green-500/95  shadow-black [text-shadow:_0_2px_0_var(--tw-shadow-color)] ">
+          {hour}:{minute < 10 ? `0${minute}` : minute}:
+          {second < 10 ? `0${second}` : second}:
+          {millisecond < 10
+            ? `00${millisecond}`
+            : millisecond < 100
+            ? `0${millisecond}`
+            : millisecond}
+        </h2>
+      </div>
+      <Bits type={"Hour"} value={hour} />
+      <Bits type={"Minute"} value={minute} />
+      <Bits type={"Second"} value={second} />
+      <Bits type={"Millisecond"} value={millisecond} />
     </div>
   );
 };
