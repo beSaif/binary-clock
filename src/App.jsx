@@ -1,31 +1,21 @@
 import React from "react";
 import Time from "./components/Time";
+import Header from "./components/Header";
 
 const App = () => {
   return (
     <div
       className="  
         h-screen
-        
         flex
         flex-col
         items-center
         justify-between
+        pb-10
     "
     >
-      <div className="bg-green-600 font-bold flex w-full items-center justify-center">
-        Binary Clock
-      </div>
+      <Header />
       <Time />
-      <div className="bg-green-600 font-bold flex w-full items-center justify-center">
-        <a
-          href="https://github.com/beSaif"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          beSaif
-        </a>
-      </div>
     </div>
   );
 };
