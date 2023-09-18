@@ -25,7 +25,14 @@ const Time = () => {
         justify-center
     "
     >
-      <Bits type={"Hour"} value={new Date(time).getHours()} />
+      <Bits
+        type={"Hour"}
+        value={
+          new Date(time).getHours() > 12
+            ? new Date(time).getHours() - 12
+            : new Date(time).getHours()
+        }
+      />
       <Bits type={"Minute"} value={new Date(time).getMinutes()} />
       <Bits type={"Second"} value={new Date(time).getSeconds()} />
       <Bits type={"Millisecond"} value={new Date(time).getMilliseconds()} />
