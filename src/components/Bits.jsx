@@ -4,7 +4,6 @@ import Bit from "./Bit";
 const Bits = ({ type, value }) => {
   const binaryValue = value.toString(2).padStart(10, "0");
 
-  console.log(`dbg ${value[0]}`);
   return (
     <div>
       <div className="flex py-2 font-light text-base">
